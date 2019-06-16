@@ -1,7 +1,8 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-
+        // Time Complexity: O(n)
+        // Space complexity: O(n)
     int maxSubArray(vector<int>& nums) {
         int i, n = nums.size();
         vector<long long> dp(n+1, 0);
