@@ -4,7 +4,8 @@ using namespace std;
 
     int maxSubArray(vector<int>& nums) {
         int i, n = nums.size();
-        //vector<long long> dp(n+1, 0);
+        // Time Complexity: O(n)
+        // Space complexity: O(1)
         long long prev_max = INT_MIN;
         long long curr_max = 0;
         long long ans = INT_MIN;
@@ -17,7 +18,7 @@ using namespace std;
             prev_max = curr_max;
 
         }
-        return prev_max;
+        return ans;
     }
 
 int main() {
